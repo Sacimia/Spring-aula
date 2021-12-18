@@ -1,0 +1,27 @@
+package com.senai.demo;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import com.senai.domain.Cliente;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.senai.repositories.ClienteRepository;
+
+@SpringBootTest
+public class ClienteTest {
+	@Autowired
+	ClienteRepository clienterepository;
+	
+	@Test
+	void Cliente(){
+		
+	}
+	@Test
+	public void somar(){
+		Cliente cliente= new Cliente();
+		double soma =  cliente.somar(5.00,10.00);
+		assertEquals(15, soma);
+				
+	}
+}

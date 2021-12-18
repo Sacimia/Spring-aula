@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.genuitec.eclipse.code.debug.chrome.codeMixLaunchConfigurationType">
+    <stringAttribute key="launchJsonContents" value="none"/>
+    <stringAttribute key="launchJsonPath" value="c:\Users\vinic\OneDrive\Área de Trabalho\ViniciusSN-codes\ViniciusSN-codes\Back Front\senai-back-font\.vscode\launch.json"/>
+    <stringAttribute key="name" value="Launch Chrome New_configuration"/>
+</launchConfiguration>

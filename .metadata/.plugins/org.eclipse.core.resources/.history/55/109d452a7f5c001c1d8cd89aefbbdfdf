@@ -1,0 +1,5 @@
+package com.senai.services.exception;
+
+public class ObjectNotFound {
+
+}

@@ -1,0 +1,19 @@
+package com.senai.demo;
+
+import java.io.Serializable;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class CidadeTest implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	@Column(name="id_cidade")
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	
+}

@@ -1,0 +1,22 @@
+{
+    "telemetry.machineId": "e16102ee-a77c-4ab9-a9d5-cb50b346b955",
+    "openedPathsList": {
+        "workspaces3": [
+            {
+                "id": "53b98c81e4f7d1f1febcc9f3b626e323",
+                "configURIPath": "file:///c%3A/Users/vinic/OneDrive/%C3%81rea%20de%20Trabalho/Vinicius-java-spring/.metadata/codemix.code-workspace"
+            },
+            {
+                "id": "bbb29ecaca6dfb695cd2693607f6c76f",
+                "configURIPath": "file:///c%3A/Users/vinic/OneDrive/%C3%81rea%20de%20Trabalho/ViniciusSN-codes/ViniciusSN-codes/Back%20Front/.metadata/codemix.code-workspace"
+            },
+            {
+                "id": "9db68df97f79226a8060a0a9a3788091",
+                "configURIPath": "file:///c%3A/Users/vinic/OneDrive/%C3%81rea%20de%20Trabalho/Back%20Front/.metadata/codemix.code-workspace"
+            }
+        ],
+        "files2": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#221a0f"
+}

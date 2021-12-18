@@ -1,0 +1,5 @@
+package com.senai.domain.enum1;
+
+public class TipoCliente {
+
+}

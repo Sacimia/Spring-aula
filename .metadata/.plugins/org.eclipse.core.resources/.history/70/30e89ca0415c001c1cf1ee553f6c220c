@@ -1,0 +1,6 @@
+package Test;
+
+@SpringBootTest
+public class EnderecoTest {
+
+}

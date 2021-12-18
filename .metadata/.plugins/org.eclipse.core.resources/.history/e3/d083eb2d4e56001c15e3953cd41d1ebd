@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome New_configuration",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9296,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://localhost:8008/"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+package com.senai.resources;
+
+public class ClienteResource {
+
+}

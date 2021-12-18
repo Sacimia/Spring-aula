@@ -1,0 +1,28 @@
+package com.senai.services;
+
+import java.util.List;
+
+import com.senai.domain.Cliente;
+
+public class ClienteService {
+	//Busca todos os clientes
+	public List<Cliente> findAll(){
+		return cli.findAll();
+	}
+	
+	
+	//Recebe o Post e poem na base de dados 
+	public Cliente insert(Cliente obj) {
+		obj.setIdCliente(null);
+		obj = cli.save(obj);
+		enderecorepository.saveAll(obj.getEnderecos());
+		return obj;
+	}
+	
+	//Atualizações 
+	
+	public Cliente update (Cliente obj) {
+		//a mesma funcao busca da mesma classe.
+		buscar(obj.getIdCliete());
+	}
+}

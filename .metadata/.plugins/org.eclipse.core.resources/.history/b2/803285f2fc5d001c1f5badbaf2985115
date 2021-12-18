@@ -1,0 +1,23 @@
+package com.senai.domain;
+
+import com.senai.domain.Cliente;
+import com.senai.domain.Cidade;
+public class Endereco {
+	
+	public Endereco(Integer idEndereco, String logradouro, String numero, String complemento, String bairro, 
+			Cliente cliente, Cidade cidade){
+		super();
+		this.idEndereco = idEndereco;
+		this.logradouro = logradouro;
+		this.numero = numero;
+		this.complemento = complemento;
+		this.bairro = bairro;
+		this.cliente = cliente;
+		this.cidade = cidade;
+	}
+	
+	
+    public Integer getIdEndereco(){
+		return idEndereco;
+	}
+}
