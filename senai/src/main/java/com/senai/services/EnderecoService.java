@@ -17,18 +17,18 @@ public class EnderecoService {
 	@Autowired 
 	private EnderecoRepository enderecorepository;
 	
-	@Autowired 
+	/*@Autowired 
 	private CIdadeRepository cidaderepository;
 	
 	@Autowired 
-	private ClienteRepository clienterepository;
+	private ClienteRepository clienterepository;*/
 	
 	public Endereco buscar (Integer id){
-		Optional<Endereco> obj = enderecorepository.findById(idEndereco);
-		return obj.orElseThrow(()-> new ObjectNotFound("Número do id não encontrado. " + "Id: " + idEndereco + ", tipo: " + Endereco.class.getName()));
+		Optional<Endereco> obj = enderecorepository.findById(IdEndereco);
+		return obj.orElseThrow(()-> new ObjectNotFound("Número do id não encontrado. " + "Id: " + IdEndereco + ", tipo: " + Endereco.class.getName()));
 	};
 	//Busca pelo todos
 	public List<Endereco> findAll(){
-		return clienterepository.findAll();
+		return enderecorepository.findAll();
 	}
 }

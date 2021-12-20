@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import java.util.List;
 import com.senai.repositories.ClienteRepository;
+import com.senai.domain.Cliente;
 
 @SpringBootTest
 public class ClienteTest {
@@ -32,7 +33,7 @@ public class ClienteTest {
 	
 	@Test
 	public void IdCliente(){
-		List<Cliente> List = clirepo.findAllById(1).get();
+		List<Cliente> List = clirepo.findById(1).get();
 		assertThat(List).size().isGreaterThan(0);
 	}
 	

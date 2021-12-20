@@ -3,6 +3,7 @@ package com.senai.domain;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import javax.persistence.CascadeType;
 
@@ -30,6 +31,7 @@ private static final long serialVersionUID = 1L;
     private String numero;
     private String bairro;
     private String complemento;
+    private String cep;
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name="cliente_id")
@@ -41,13 +43,14 @@ private static final long serialVersionUID = 1L;
 	@OneToMany(mappedBy="cliente", cascade = CascadeType.ALL)
 	private List<Endereco> enderecos = new ArrayList<>();
 	
-	public Endereco(Integer idEndereco, String logradouro, String numero, String bairro, String complemento,
+	public Endereco(Integer idEndereco, String logradouro, String numero, String bairro, String complemento, String cep,
 			Cliente cliente, Cidade cidade) {
 		super();
 		this.idEndereco = idEndereco;
 		this.logradouro = logradouro;
 		this.numero = numero;
 		this.bairro = bairro;
+		this.cep = cep;
 		this.complemento = complemento;
 		this.cliente = cliente;
 	}
@@ -91,6 +94,14 @@ private static final long serialVersionUID = 1L;
 	public void setComplemento(String complemento) {
 		this.complemento = complemento;
 	}
+	
+	public String getCep() {
+		return cep;
+	}
+	
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
 
 	public Cliente getCliente() {
 		return cliente;
@@ -99,5 +110,10 @@ private static final long serialVersionUID = 1L;
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(idEndereco);
+	}	
 	
 }

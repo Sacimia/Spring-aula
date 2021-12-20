@@ -10,10 +10,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.senai.domain.Estado;
+
 	
 @Entity
 public class Cidade implements Serializable {
@@ -25,14 +24,15 @@ public class Cidade implements Serializable {
 	private String nome;
 		
 	@JsonIgnore
-	@OneToMany(mappedBy = "cidades")
+	@ManyToOne
+	@JoinColumn(name="estado_id")
 	private List<Estado>  estado = new ArrayList<>();
 		
 		public Cidade(){
 			
 		}
-		
-		public Cidade(Integer idCidade, String nome, Estado estado) {
+
+		public Cidade(Integer idCidade, String nome, List<Estado> estado) {
 			super();
 			this.idCidade = idCidade;
 			this.nome = nome;
@@ -63,4 +63,4 @@ public class Cidade implements Serializable {
 			this.estado = estado;
 		}
 		
-}
+}		

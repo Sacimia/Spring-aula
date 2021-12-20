@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="../css/post.css">
 </head>
 <body>
-    <h1>Cadastro de cliente</h1>
+    <div class= "page">
+    <header> 
+        <h1>Cadastro de cliente</h1>
+    </header>
+    <div>
     <form onsubmit="cadastroCliente()">
         <label for="nome">Nome</label>
         <input type="text" name="nome" id="nome">
@@ -33,5 +37,8 @@
         <button type = "onSubmit" href="../html/index.html" >Enviar</button>
     </form>
     <script type="text/javascript" src="../js/post.js"></script>
+    <script>
+        $("#telefones").mask(("99) 99999-9999");
+    </script>
 </body>
 </html>

@@ -24,8 +24,8 @@ public class ClienteService {
 	}
 }	
 /*	//Busca todos os clientes
-	public List<Cliente> findAll(){
-		return cli.findAll();
+	public List<Endereco> findAll(){
+		return end.findAll();
 	}
 	
 	
